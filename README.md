@@ -32,7 +32,7 @@ The Swagger UI can be accessed using using http://localhost:8080/v1.0/ui/. The n
 only accepts country code for ex. IN, US etc.
 
 ```
-rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/v1.0/cities/bangalore"
+curl -X GET "http://0.0.0.0:8080/v1.0/cities/bangalore"
 [
   {
     "city": "Bengaluru",
@@ -41,7 +41,7 @@ rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/
 ]
 ```
 ```
-rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/v1.0/cities/New%20york"
+curl -X GET "http://0.0.0.0:8080/v1.0/cities/New%20york"
 [
   {
     "city": "New York Mills",
@@ -90,7 +90,7 @@ rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/
 ]
 ```
 ```
-rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/v1.0/cities/Syracuse"
+curl -X GET "http://0.0.0.0:8080/v1.0/cities/Syracuse"
 [
   {
     "city": "Siracusa",
@@ -127,7 +127,7 @@ rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/
 ]
 ```
 ```
-rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/v1.0/nearest_cities?city=bangalore&k=10&country=IN"
+curl -X GET "http://0.0.0.0:8080/v1.0/nearest_cities?city=bangalore&k=10&country=IN"
 [
   {
     "city": "Bengaluru",
@@ -176,7 +176,7 @@ rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/
 ]
 ```
 ```
-rkadam@rkadam-vbox:~/github/geonames_analysis$ curl -X GET "http://0.0.0.0:8080/v1.0/nearest_cities?city=New%20york&k=10&country=US"
+curl -X GET "http://0.0.0.0:8080/v1.0/nearest_cities?city=New%20york&k=10&country=US"
 [
   {
     "city": "New York Mills",
