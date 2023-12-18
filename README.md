@@ -224,15 +224,3 @@ curl -X GET "http://0.0.0.0:8080/v1.0/nearest_cities?city=New%20york&k=10&countr
   }
 ]
 ```
-
-Enhancements:
---------------
-1. Instead of parsing the geonames text file every time the server launches, the parsed data
-can be stored in database. Also redis can be used to cache the location data and result of queries
-2. KDTree in scipy.spatial module is single threaded. It can be modified to make use of multiple cores
-3. Instead of having functions in genonames module as REST endpoint handlers, it is better
-to have the handlers in class GeoNames as methods. This would be much cleaner way of implementing REST handlers
-4. Having KDTree for each country greatly improves the query time since KDTree is built per tree.
-But the tradeoff is this approach requires more memory
-5. Improve the nearest_neighbors api to handle country name
-6. Enhance the api's to return more fields in result which should be trivial
