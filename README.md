@@ -22,7 +22,7 @@ The KDTree suffers from unbalanced subtrees similar to binary tree.
 
 Install pip requirements & run server:
 ---------------------------------------
-1. ```mkvirtualenv geonamesenv```
+1. ```py -m venv .venv ```
 1. ```pip install -r requirements.txt```
 2. ```python geonames_api_server.py```
 
